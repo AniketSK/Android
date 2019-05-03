@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnSlideUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),SlideUpActivity.class));
-                overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
+                SlideUpActivity.launchActivity(MainActivity.this);
             }
         });
 
